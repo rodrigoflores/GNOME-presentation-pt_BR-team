@@ -1,0 +1,7 @@
+Digraph G {
+    tradutor [shape=box]
+    commiter [shape=box]
+    revisor  [shape=box]
+    tradutor -> revisor -> commiter
+    revisor -> tradutor 
+}

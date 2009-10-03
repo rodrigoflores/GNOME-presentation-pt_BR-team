@@ -1,0 +1,7 @@
+Digraph G {
+    "Damned Lies" [shape=box]
+    Wiki [shape=box]
+    Bugzilla [shape=box]
+    SVN [shape=box]
+    "Damned Lies" -> Wiki [label="Tradutor"]
+}
