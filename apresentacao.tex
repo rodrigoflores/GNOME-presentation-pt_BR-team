@@ -11,9 +11,9 @@
 
 \title{Projeto de Tradução do GNOME para o Português do Brasil: presente e futuro}
 
-\author{Rodrigo L. M. Flores \\ \url{mail@rodrigoflores.org}}
+\author{Rodrigo L. M. Flores \\ \url{rlmflores@src.gnome.org}}
 
-\logo{\includegraphics[width=1cm]{figures/gnome-logo}}
+\logo{\includegraphics[scale=0.3]{figures/gnome-logo}}
 
 \institute{GNOME Brasil}
 \begin{document}
@@ -37,59 +37,54 @@
     \end{itemize}
 \end{frame}
 
-\section{Passado}
-
-\begin{frame}
-    \frametitle{E onde está o passado ?}
-    Informações incertas demais para se falar ! Entrei em dezembro de 2007, então muita gente eu não tive
-    o prazer de trabalhar junto. 
-\end{frame}
-
-\begin{frame}
-    \frametitle{Mas sem esquecer de citar}
-    \begin{columns}[c]
-      \column{1.5in}
-        \begin{itemize}
-          \item Alexandre Folle de Menezes
-          \item André Noel
-          \item Estevão Procópio
-          \item Evandro Giovanini
-          \item Guilherme Pastore
-          \item Gustavo Noronha
-          \item Hugo Dória
-       \end{itemize}
-       \column{1.5in}
-       \begin{itemize}
-          \item Igor Soares
-          \item Maurício Collares
-          \item Luiz Armesto
-          \item Pedro de Medeiros
-          \item Raphael Higino
-          \item Raul Pereira
-          \item Sandro Nunes Henrique 
-          \item Washington Lins
-        \end{itemize}
-    \end{columns}
-\end{frame}
 
 \section{Um pouco sobre nós}
 
 \begin{frame}
-    \frametitle{Missão}
+  \centering
+  \Huge{Um pouco sobre nós}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Missão (não oficial)}
     Fazer com que usuários do GNOME possam utilizar um sistema 
     totalmente traduzido para nosso idioma, cumprindo 
     com padrões altos de qualidade 
 \end{frame}
 
+\begin{frame}[fragile]
+  \frametitle{O que fazemos?}
+  \begin{block}{O que é assim}
+    \begin{verbatim}
+    #: ../src/foobar.c:42
+    msgid "The book is on the table"
+    msgstr ""  
+    \end{verbatim}
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{O que fazemos?}
+  \begin{block}{Fica assim}
+    \begin{verbatim}
+    #: ../src/foobar.c:42
+    msgid "The book is on the table"
+    msgstr "O livro está sobre a mesa"  
+    \end{verbatim}
+  \end{block}
+\end{frame}
+
+
+
 \begin{frame}
   \frametitle{E o que o GNOME ganha com isso ?}
-  \begin{itemize}
-    \item Mais usuários
-    \item Maior ``acessibilidade''
+  \begin{itemize}[<+->]
+    \item Mais usuários (que podem ser até $170M$)
+    \item Maior internacionalização (
   \end{itemize}  
 \end{frame}
 
-\begin{frame}
+\begin{frame}[<+->]
   \frametitle{E o que nós ganhamos com isso?}
   \begin{itemize}
     \item Orgulho de termos nosso nome nos créditos do GNOME;
@@ -101,6 +96,12 @@
 
 
 \section{Como funcionávamos ?}
+
+
+\begin{frame}
+  \centering
+  \Huge{Como funcionávamos ?}
+\end{frame}
 
 \begin{frame}
     \frametitle{Nosso fluxo de trabalho antigo}
@@ -134,6 +135,12 @@
 \section{Uma nova era...}
 
 \begin{frame}
+  \centering
+  \Huge{Uma nova era...}
+\end{frame}
+
+
+\begin{frame}
     \frametitle{O que tinhamos?}
     \begin{itemize}[<+->]
         \item Tradutores experientes;
@@ -158,7 +165,7 @@
 
     Requisitos:
     \begin{itemize}[<+->]
-        \item Fazer parte da equipe há, pelo menos, 6 meses
+        \item Fazer parte da equipe a, pelo menos, 6 meses
         \item Ser aprovado por pelo menos 2 revisores (e o coordenador pode ser um desses)
         \item Ser aprovado pelo coordenador
     \end{itemize}
@@ -208,29 +215,41 @@
 \section{Problemas técnicos}
 
 \begin{frame}
+  \centering
+  \Huge{Problemas técnicos}
+\end{frame}
+
+
+\begin{frame}
   \frametitle{Falhas humanas acontecem...}
   \begin{figure}
-    \includegraphics<1-2>[scale=0.5]{figures/Welsh.png}
-    \includegraphics<3>[scale=0.5]{figures/translateservererror.jpg}
-    \includegraphics<4>[scale=0.5]{figures/bugtraditunes8.png}
+    \includegraphics<1-3>[scale=0.5]{figures/Welsh.png}
+    \includegraphics<4>[scale=0.5]{figures/translateservererror.jpg}
+    \includegraphics<5>[scale=0.5]{figures/bugtraditunes8.png}
   \end{figure} 
   
   \only<2>{I am not in the office at the moment. Please send any work to be translated.}
-  \only<2>{Retirado de \url{http://news.bbc.co.uk/2/hi/uk_news/wales/7702913.stm}}  
-  \only<3>{Retirado de \url{http://kibeloco.com.br/kibeloco/2008/09/09/pracas-do-braziu-ou-melhor-da-xina/} }  
-  \only<4>{Retirado de \url{http://appleaddicted.com.br/blog/erro-de-traducao-no-itunes-8/}}
+  \only<3>{Retirado de \url{http://news.bbc.co.uk/2/hi/uk_news/wales/7702913.stm}}  
+  \only<3>{e \url{http://blog.ogmaciel.com/?p=484}}  
+  \only<4>{Retirado de \url{http://kibeloco.com.br/kibeloco/2008/09/09/pracas-do-braziu-ou-melhor-da-xina/} }  
+  \only<5>{Retirado de \url{http://appleaddicted.com.br/blog/erro-de-traducao-no-itunes-8/}} 
+  \only<5>{e \url{http://vladimirmelo.wordpress.com/2008/09/12/para-os-fanboys-da-apple/ }}
 \end{frame}
 
 \begin{frame}
   \frametitle{As vezes de uma maneira mais sutil}
-  \begin{itemize}[<+->]
-    \item Padrões
-    \item Typos
-    \item Ortografia  
-    \item Teclas de acesso rápido
-    \item Termos ``importados''
-    \item Erros frequentes
-  \end{itemize}
+  \begin{columns}
+    \column{1.5in}
+    \begin{itemize}[<+->]
+      \item Padrões
+      \item Typos
+      \item Ortografia  
+      \item Teclas de acesso rápido
+      \item Termos ``importados''
+      \item Erros frequentes
+    \end{itemize}
+    \column{1.5in}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -254,7 +273,47 @@
 \end{frame}
 
 
-\section{Dando nome aos bois}
+\section{Nossa equipe}
+
+
+\begin{frame}
+  \centering
+  \Huge{Nossa equipe}
+\end{frame}
+
+\begin{frame}
+    \frametitle{E onde está o passado ?}
+    Informações incertas demais para se falar ! Entrei em dezembro de 2007, então muita gente eu não tive
+    o prazer de trabalhar junto. 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Mas sem esquecer de citar}
+    \begin{columns}[c]
+      \column{1.5in}
+        \begin{itemize}
+          \item Alexandre Folle de Menezes
+          \item André Noel
+          \item Estevão Procópio
+          \item Evandro Giovanini
+          \item Guilherme Pastore
+          \item Gustavo Noronha
+          \item Hugo Dória
+       \end{itemize}
+       \column{1.5in}
+       \begin{itemize}
+          \item Igor Soares
+          \item Maurício Collares
+          \item Luiz Armesto
+          \item Pedro de Medeiros
+          \item Raphael Higino
+          \item Raul Pereira
+          \item Sandro Nunes Henrique 
+          \item Washington Lins
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{``Committers''}
@@ -339,24 +398,22 @@
         \begin{figure}
           \includegraphics<3>{figures/lucasazevedo.png}     
         \end{figure}
-
-
     \end{columns}
 \end{frame}
 
-\section{LDP-BR}
+\section{Futuros planos}
 
 \begin{frame}
-  \frametitle{O que é?}
-  \begin{itemize}[<+->]
-    \item Linux Documentation Project - Brasil
-    \item Lista de discussão
-    \item Vocabulário Padrão (VP)
-    \item Projeto de tradução de documentações e aplicativos
-  \end{itemize}
+  \centering
+  \Huge{Futuros planos}
 \end{frame}
 
-\section{Futuros planos}
+\begin{frame}
+    \frametitle{Reforma ortográfica}
+
+    Nosso plano: O GNOME 3.0 ser lançado nas novas normas de ortografia. 
+
+\end{frame}
 
 \begin{frame}
     \frametitle{Iniciantes?}
@@ -371,10 +428,8 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Reforma ortográfica}
-
-    Nosso plano: O GNOME 3.0 ser lançado nas novas normas de ortografia. 
-
+    \frametitle{Melhorar guias de iniciantes}
+    Screencasts ou tutorials passo-a-passo;
 \end{frame}
 
 \begin{frame}
@@ -384,27 +439,40 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Revisão obrigatória para traduções grandes}
-    Quanto maior a tradução, maior a chance de pequenos erros persistirem. 
-    Não seria bom as traduções grandes serem revisadas independentementes do tradutor?
-\end{frame}
-
-\begin{frame}
     \frametitle{Melhorar nosso wiki}
     É de lá que as pessoas conhecem nosso trabalho! Temos que melhorar bastante :-).
 \end{frame}
 
+\section{Projetos relacionados}
+
 \begin{frame}
-  \frametitle{Projetos relacionados}
-  \begin{itemize}
-    \item GNOME Translation Project
-    \item LDP-BR
+  \centering
+  \Huge{Projetos relacionados}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{GNOME Translation Project}
+  \begin{itemize}[<+->]
+    \item 114 Idiomas (de Africâner a Zulu)
+    \item Suporte para equipes de novos idiomas
+    \item Relação tradutores x desenvolvedores
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LDP-BR}
+  \begin{itemize}[<+->]
+    \item Projeto de tradução de documentações para o Português do Brasil;
+    \item Traduz também aplicações projeto GNU;
+    \item Lista de discussões onde discutimos a adição/alteração/remoção de termos no VP, assim como dúvidas em traduções de termos; 
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Melhoras para o VP}
-  Um sistema web
+  Um sistema web com:
   \begin{itemize}[<+->]
     \item Votação online de termos
     \item Propôr traduções padrão
@@ -429,6 +497,7 @@
 
   \begin{itemize}[<+->]
     \item Todos os tradutores e revisores da equipe;
+    \item Leonardo Fontenelle;
     \item Izabel Valverde;
     \item Fundação GNOME;     
   \end{itemize}
